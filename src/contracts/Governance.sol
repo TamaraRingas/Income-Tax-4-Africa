@@ -161,7 +161,7 @@ contract Governance is IGovernance, Ownable, ReentrancyGuard {
 
     modifier onlySupervisor(uint256 _proposalID) {
         IProposal.Proposal memory currentProposal = _proposal.getProposal(_proposalID);
-        console.log(currentProposal.supervisor);
+
         require(msg.sender == _proposal.getProposal(_proposalID).supervisor, "ONLY SUPERVISOR");
         _;
     }
