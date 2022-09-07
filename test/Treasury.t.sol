@@ -8,6 +8,9 @@ contract TreasuryTest is Test {
 
   }
 
-  
+  function testGetProposalStateDetails() public {
+
+  }
+
 
 }
